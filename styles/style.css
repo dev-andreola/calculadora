@@ -37,12 +37,16 @@ header strong {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 90%;
 }
 
 .calculadora {
-  border: 2px solid #fff;
-  padding: 1em;
+  background: #002d62;
+  box-shadow:  9px 9px 18px #002148,
+              -9px -9px 18px #00397c;
+  position: absolute;
+  border-radius: 15px;
+  padding: 2em;
 }
 
 .calculadora h2 {
@@ -51,9 +55,38 @@ header strong {
 }
 
 .calculadora p {
-  border: 1px solid var(--font-color);
-  height: 1em;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 2em;
+  line-height: 2em;
   margin-bottom: 1em;
   width: 100%;
+  color: black;
+  font-weight: 700;
+  font-size: 1.5em; 
 }
 
+button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  margin: 1px;
+  color: white;
+}
+
+.row {
+  position: fixed ;
+  height: 102px;
+}
+
+.col {
+  position: fixed;
+  width: 102px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
